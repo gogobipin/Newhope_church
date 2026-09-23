@@ -1,5 +1,4 @@
-// ---------- Language switching (English / Nepali) ----------
-// Reads/writes localStorage so the chosen language carries across pages.
+// --Language switching (English / Nepali) --
 // Elements opt in with data-en / data-np (plain text), data-en-html / data-np-html
 // (for text that needs inline markup, e.g. a line break), or
 // data-en-placeholder / data-np-placeholder (form field placeholders).
@@ -255,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
     giving.querySelectorAll('.copy-btn').forEach(function (btn) {
       var valueEl = btn.parentNode.querySelector('.detail-value');
       if (!valueEl || valueEl.hasAttribute('data-placeholder')) {
-        btn.disabled = true; // nothing real to copy yet
+        btn.disabled = true; 
         return;
       }
       btn.addEventListener('click', function () {
@@ -315,7 +314,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var makeItem = function (it, isClone, boxH) {
       var fig = document.createElement('figure');
       fig.className = 'marquee-item';
-      // whole-pixel width so neighbouring photos meet exactly (no hairline seams)
       fig.style.width = Math.round(boxH * it.w / it.h) + 'px';
       var img = document.createElement('img');
       img.src = it.src;

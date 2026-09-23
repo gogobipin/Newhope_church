@@ -141,7 +141,7 @@ img{ max-width: 100%; display: block; }
   height: 50px;
   flex: none;
   position: relative;
-  top: -4px; /* nudge the mark up so it lines up with the "New Hope" text */
+  top: -4px; 
 }
 
 .nav-links{
@@ -433,7 +433,6 @@ section.tight{ padding: 64px 0; }
     overflow-y: auto;
   }
   .nav-links.open{ display: flex; }
-  /* the open panel is a white surface, so its links go back to ink */
   .nav-links a{ color: var(--ink); }
   .nav-links a:hover{ border-color: var(--ink); }
   .nav-links a.active{ border-color: var(--ink); }
@@ -450,9 +449,7 @@ section.tight{ padding: 64px 0; }
   .footer-grid{ grid-template-columns: 1fr; }
 }
 
-/* ============================================================
-   GROUPS PAGE
-   ============================================================ */
+/*GROUPS PAGE*/
 
 /* ── Hero: light background, text left / art-block right ── */
 .groups-hero { 
@@ -494,7 +491,7 @@ section.tight{ padding: 64px 0; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px 40px;
-  align-items: stretch; /* equal-height cards so every "Learn More" button lines up */
+  align-items: stretch; 
   margin-top: 52px;
 }
 
@@ -557,9 +554,7 @@ section.tight{ padding: 64px 0; }
   .group-types           { padding: 64px 0; }
 }
 
-/* ============================================================
-   GIVE PAGE — giving options
-   ============================================================ */
+/*GIVE PAGE — giving options*/
 
 .giving{ background: var(--ink); color: var(--paper); }
 .giving-in{ max-width: 860px; text-align: center; }
@@ -696,9 +691,7 @@ section.tight{ padding: 64px 0; }
 
 .panel-lead + .wallet-body{ margin-top: 24px; }
 
-/* ============================================================
-   PHOTO STRIP (home page) — continuous, seamless loop
-   ============================================================ */
+/* PHOTO STRIP (home page) — continuous, seamless loop*/
 
 .marquee{
   position: relative;
@@ -706,7 +699,6 @@ section.tight{ padding: 64px 0; }
   border-radius: 4px;
   height: clamp(220px, 38vw, 420px);
   background: var(--paper-soft);
-  /* keep all painting/animation inside this box so the rest of the page never repaints with it */
   contain: layout paint;
   isolation: isolate;
 }
@@ -719,13 +711,12 @@ section.tight{ padding: 64px 0; }
   backface-visibility: hidden;
   animation: marquee-run var(--dur, 60s) linear infinite;
   animation-play-state: paused;
-  opacity: 0;                       /* hidden only until the photos are ready (no pop-in) */
+  opacity: 0;                       
   transition: opacity 0.1s linear;
 }
 
 .marquee.ready .marquee-track{ animation-play-state: running; opacity: 1; }
-.marquee.offscreen .marquee-track{ animation-play-state: paused; }  /* nothing moves while out of view */
-
+.marquee.offscreen .marquee-track{ animation-play-state: paused; }  
 @keyframes marquee-run{
   from{ transform: translate3d(0, 0, 0); }
   to{ transform: translate3d(var(--shift, -50%), 0, 0); }
@@ -734,7 +725,7 @@ section.tight{ padding: 64px 0; }
 .marquee-item{
   flex: none;
   height: 100%;
-  margin: 0;            /* photos touch each other: no gaps */
+  margin: 0;            
 }
 
 .marquee-item img{
