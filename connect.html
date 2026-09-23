@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="Connect — New Hope Church" data-np="जोडिनुहोस् — New Hope Church">Connect — New Hope Church</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .form-row{ display:flex; flex-direction:column; gap:6px; margin-bottom:18px; }
+  .form-row label{ font-size:14px; font-weight:600; }
+  .form-row input, .form-row textarea{
+    font-family:'Work Sans', sans-serif; font-size:15px; padding:12px 14px;
+    border:1px solid var(--line); border-radius:4px; background:var(--paper); color:var(--ink);
+  }
+  .form-row textarea{ resize:vertical; min-height:110px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="index.html">
+      <img src="pictures/black-border.png" alt="New Hope Church Logo" class="mark" />
+      New Hope
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="connect.html" class="active" data-en="Connect" data-np="जोडिनुहोस्">Connect</a></li>
+      <li><a href="groups.html" data-en="Groups" data-np="समूहहरू">Groups</a></li>
+      <li><a href="events.html" data-en="Events" data-np="कार्यक्रमहरू">Events</a></li>
+      <li><a href="testimonies.html" data-en="Testimonies" data-np="गवाहीहरू">Testimonies</a></li>
+      <li><a href="about.html" data-en="About Us" data-np="हाम्रो बारेमा">About Us</a></li>
+      <li><a href="give.html" data-en="Give" data-np="दान गर्नुहोस्">Give</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" aria-label="नेपाली भाषामा हेर्नुहोस्">नेपाली</button>
+      <a class="btn btn-ghost" href="#visit" data-en="Find us" data-np="हामीलाई भेट्टाउनुहोस्">Find us</a>
+      <a class="btn btn-primary" href="#contact-form" data-en="Contact Us" data-np="सम्पर्क गर्नुहोस्">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="tight">
+    <div class="wrap hero-in">
+      <h1 class="display" style="font-size:clamp(38px,6vw,60px); max-width:16ch;" data-en="Find your way in" data-np="आफ्नो बाटो फेला पार्नुहोस्">Find your way in</h1>
+      <p style="max-width:52ch; font-size:18px; color:var(--muted); margin-top:16px;" data-en="However you&#x27;re looking to connect — in person, online, or in a smaller group — there&#x27;s a place for you here." data-np="तपाईं जुनसुकै तरिकाले जोडिन खोज्नुभए पनि — व्यक्तिगत रूपमा, अनलाइन, वा साना समूहमा — यहाँ तपाईंको लागि ठाउँ छ।">
+        However you're looking to connect — in person, online, or in a smaller
+        group — there's a place for you here.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+      <a id="visit" href="#visit-map" class="card" style="text-decoration:none; min-height:220px; justify-content:flex-end; background:var(--paper);">
+        <span class="tag" data-en="In person" data-np="व्यक्तिगत रूपमा">In person</span>
+        <h3 data-en="Visit Us" data-np="हामीलाई भ्रमण गर्नुहोस्">Visit Us</h3>
+        <p data-en="Saturdays, 10:30 &amp; 12:30 PM at our New Hope Churches — arrive a little early." data-np="शनिबार, बिहान १०:३० र मध्यान्ह १२:३० बजे हाम्रा New Hope चर्चहरूमा — अलि चाँडै आउनुहोस्।">Saturdays, 10:30 & 12:30 PM at our New Hope Churches — arrive a little early.</p>
+      </a>
+      <a id="groups" href="groups.html" class="card" style="text-decoration:none; min-height:220px; justify-content:flex-end; background:var(--paper);">
+        <span class="tag" data-en="Small groups" data-np="साना समूहहरू">Small groups</span>
+        <h3 data-en="Groups" data-np="समूहहरू">Groups</h3>
+        <p data-en="Home Groups meet weekly across the city — the fastest way to make real friends here." data-np="होम ग्रुपहरू सहरभरि साप्ताहिक रूपमा भेला हुन्छन् — यहाँ साँचो साथी बनाउने सबैभन्दा छिटो तरिका।">Home Groups meet weekly across the city — the fastest way to make real friends here.</p>
+      </a>
+      <a id="online" href="#online-watch" class="card" style="text-decoration:none; min-height:220px; justify-content:flex-end; background:var(--paper);">
+        <span class="tag" data-en="Livestream" data-np="लाइभस्ट्रिम">Livestream</span>
+        <h3 data-en="Online" data-np="अनलाइन">Online</h3>
+        <p data-en="Can't make it in person? Join our Saturday livestream, wherever you are." data-np="व्यक्तिगत रूपमा आउन सक्नुहुन्न? तपाईं जहाँ भए पनि हाम्रो शनिबारको लाइभस्ट्रिममा सामेल हुनुहोस्।">Can't make it in person? Join our Saturday livestream, wherever you are.</p>
+      </a>
+      <a id="events" href="events.html" class="card" style="text-decoration:none; min-height:220px; justify-content:flex-end; background:var(--paper);">
+        <span class="tag" data-en="What&#x27;s on" data-np="के छ यहाँ">What's on</span>
+        <h3 data-en="Events" data-np="कार्यक्रमहरू">Events</h3>
+        <p data-en="See what&#x27;s happening this month, from Youth Night to Community Service Day." data-np="यस महिना के भइरहेको छ हेर्नुहोस्, युवा रात्रीदेखि सामुदायिक सेवा दिवससम्म।">See what's happening this month, from Youth Night to Community Service Day.</p>
+      </a>
+    </div>
+  </section>
+
+  <section style="background:var(--paper); border-top:1px solid var(--line);">
+    <div class="wrap two-col">
+      <div>
+        <h2 style="font-size:clamp(26px,3vw,34px);" data-en="Say hello" data-np="नमस्ते भन्नुहोस्">Say hello</h2>
+        <p style="margin-top:14px; color:var(--muted); max-width:46ch;" data-en="Questions about visiting, church services, home groups near you, or anything else? Send us a message, and someone from our team will get back to you." data-np="भ्रमण, तपाईं नजिकैको होम ग्रुप, वा अरू कुनै कुराबारे प्रश्न छ भने — हामीलाई सन्देश पठाउनुहोस्, हाम्रो टोलीबाट कोहीले तपाईंलाई फर्केर सम्पर्क गर्नेछ।">
+          Questions about visiting, church services, home groups near you, or anything else? Send us a message, and someone from our team will get back to you.
+        </p>
+        <div style="margin-top:32px; display:flex; flex-direction:column; gap:16px; font-size:15px;">
+          <div>
+            <strong data-en="Address" data-np="ठेगाना">Address</strong><br>
+            <span style="color:var(--muted);" data-en="Banepa, Kavre, Nepal" data-np="बनेपा, काभ्रे, नेपाल">Banepa, Kavre, Nepal</span>
+          </div>
+          <div>
+            <strong data-en="Service times" data-np="आराधनाको समय">Service times</strong><br>
+            <span style="color:var(--muted);" data-en="Saturday, 10:30 AM &amp; 12:30 PM" data-np="शनिबार, बिहान १०:३० र मध्यान्ह १२:३०">Saturday, 10:30 AM & 12:30 PM</span>
+          </div>
+          <div>
+            <strong data-en="Email" data-np="इमेल">Email</strong><br>
+            <span style="color:var(--muted);">hello@newhope.org.np</span>
+          </div>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <div class="form-row">
+          <label for="name" data-en="Name" data-np="नाम">Name</label>
+          <input id="name" type="text" placeholder="Your full name" required data-en-placeholder="Your full name" data-np-placeholder="तपाईंको पूरा नाम">
+        </div>
+        <div class="form-row">
+          <label for="email" data-en="Email" data-np="इमेल">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required data-en-placeholder="you@example.com" data-np-placeholder="तपाईंको इमेल">
+        </div>
+        <div class="form-row">
+          <label for="message" data-en="Message" data-np="सन्देश">Message</label>
+          <textarea id="message" placeholder="How can we help?" required data-en-placeholder="How can we help?" data-np-placeholder="हामी कसरी मद्दत गर्न सक्छौं?"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" data-en="Send message" data-np="सन्देश पठाउनुहोस्">Send message</button>
+        <p id="form-status" style="margin-top:12px; font-size:14px; color:var(--muted); display:none;"></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="visit-map" style="background:var(--paper); border-top:1px solid var(--line); padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:32px;">
+    <h2 style="font-size:clamp(26px,3vw,34px);" data-en="Our church near you." data-np="हाम्रो नजिकैको चर्च">Our church near you.</h2>
+    <div class="map-picker" style="margin-top:20px;">
+
+      <!-- LEFT: map -->
+      <div class="map-frame-wrap">
+        <iframe id="church-map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d892.8786099356183!2d85.52283634907381!3d27.63397051985811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb090046f56a6b%3A0x4c1b291993f486cc!2sNEW%20HOPE%20KAVRE%20CHURCH!5e1!3m2!1sen!2snp!4v1789358273656!5m2!1sen!2snp"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+
+      <!-- RIGHT: church list -->
+      <div class="church-list">
+        <button type="button" class="church-item active"
+          data-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d892.8786099356183!2d85.52283634907381!3d27.63397051985811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb090046f56a6b%3A0x4c1b291993f486cc!2sNEW%20HOPE%20KAVRE%20CHURCH!5e1!3m2!1sen!2snp!4v1789358273656!5m2!1sen!2snp">
+          <strong>New Hope Kavre Church</strong>
+          <span>JGMF+H3P, Banepa, Bagmati Province 45210</span>
+        </button>
+
+        <button type="button" class="church-item"
+          data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57069.59636073262!2d85.24899408689247!3d27.776566842322904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1f1660f01d15%3A0x6bc8f6a111170a6d!2sTarakeshwar%2C%20Bagmati%20Province!5e1!3m2!1sen!2snp!4v1789360051380!5m2!1sen!2snp">
+          <strong>New Hope Banepa Church</strong>
+          <span>Tarkeshwor, Banepa, Nepal</span>
+        </button>
+
+        <button type="button" class="church-item"
+          data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.501484353169!2d85.53883627550266!3d27.511549276295447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb0b0016cb52ab%3A0x35e3ad766bd83ad8!2sNew%20Hope%20Kavre%20Church!5e1!3m2!1sen!2snp!4v1789360003675!5m2!1sen!2snp">
+          <strong>New Hope Kavre Church</strong>
+          <span>GG6R+JH7, Mahankal Chaur, Bagmati Province 45200</span>
+        </button>
+
+        <button type="button" class="church-item"     
+          data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.9859671443764!2d84.45587771265778!3d27.697004124118674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994e54a2a743585%3A0xc37a285bb5fe189d!2sJiudopani%20Church!5e1!3m2!1sen!2snp!4v1789359583674!5m2!1sen!2snp">
+          <strong>New Hope Jiudopani Church</strong>
+          <span>MFW4+PH9, Bharatpur, Bagmati Province 44207</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:var(--paper); margin-bottom:14px;">
+          <img src="pictures/black-border.png" alt="New Hope Church Logo" class="mark" />
+          New Hope
+        </div>
+        <p data-en="A community anchored in one unshakeable hope, gathering weekly in Nepal." data-np="एउटै अटल आशामा जरा गाडेको समुदाय, नेपालमा साप्ताहिक रूपमा भेला हुने।">A community anchored in one unshakeable hope, gathering weekly in Nepal.</p>
+      </div>
+      <div>
+        <h4 data-en="Explore" data-np="अन्वेषण">Explore</h4>
+        <ul>
+          <li><a href="about.html" data-en="About Us" data-np="हाम्रो बारेमा">About Us</a></li>
+          <li><a href="events.html" data-en="Events" data-np="कार्यक्रमहरू">Events</a></li>
+          <li><a href="connect.html" data-en="Connect" data-np="जोडिनुहोस्">Connect</a></li>
+          <li><a href="testimonies.html" data-en="Testimonies" data-np="गवाहीहरू">Testimonies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Connect" data-np="जोडिनुहोस्">Connect</h4>
+        <ul>
+          <li><a href="connect.html#visit-map" data-en="Visit us" data-np="हामीलाई भ्रमण गर्नुहोस्">Visit us</a></li>
+          <li><a href="connect.html#online" data-en="Watch online" data-np="अनलाइन हेर्नुहोस्">Watch online</a></li>
+          <li><a href="give.html" data-en="Give" data-np="दान गर्नुहोस्">Give</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Find us" data-np="हामीलाई भेट्टाउनुहोस्">Find us</h4>
+        <ul>
+          <li data-en="Saturday, 10:30 AM &amp; 12:30 PM" data-np="शनिबार, बिहान १०:३० र मध्यान्ह १२:३०">Saturday, 10:30 AM & 12:30 PM</li>
+          <li data-en="New Hope Church, Nepal" data-np="New Hope Church, नेपाल">New Hope Church, Nepal</li>
+          <li>hello@newhope.org.np</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-en="© 2026 New Hope Church, Nepal." data-np="© २०२६ New Hope Church, नेपाल।">© 2026 New Hope Church, Nepal.</span>
+      <span data-en="Built with care for our community." data-np="हाम्रो समुदायको लागि मायाका साथ निर्माण गरिएको।">Built with care for our community.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

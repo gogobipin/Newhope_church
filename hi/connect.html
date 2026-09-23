@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect — New Hope Church</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="index.html">
+      <img src="images/white.png" alt="New Hope Church Logo" class="mark" />
+      New Hope
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="connect.html" class="active">Groups</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="testimonies.html">Testimonies</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="give.html">Give</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle">EN / NP</button>
+      <a class="btn btn-ghost" href="#visit">Find us</a>
+      <a class="btn btn-primary" href="#contact-form">Contact Us<span class="arrow">→</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero-tight">
+    <div class="wrap">
+      <h1 class="display" style="font-size:clamp(34px,6vw,var(--text-display-sm)); max-width:16ch; margin:0 auto;">Find your way in</h1>
+      <p class="lede" style="max-width:52ch;">
+        However you're looking to connect — in person, online, or in a smaller
+        group — there's a place for you here.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap tile-grid" style="grid-template-columns:repeat(2,1fr); gap:16px;">
+      <a id="visit" href="#contact-form" class="tile tile-deep on-dark tile-link" style="min-height:220px; justify-content:flex-end;">
+        <span class="mono-label" style="color:var(--color-pale-iris);">In person</span>
+        <h3>Visit Us</h3>
+        <p>Sundays, 9:00 &amp; 11:00 AM at our Lazimpat campus — arrive a little early, there's coffee.</p>
+      </a>
+      <div id="groups" class="tile tile-orchid" style="min-height:220px; justify-content:flex-end;">
+        <span class="mono-label" style="color:var(--color-void); opacity:0.65;">Small groups</span>
+        <h3>Groups</h3>
+        <p>Home Groups meet weekly across the city — the fastest way to make real friends here.</p>
+      </div>
+      <div id="online" class="card" style="min-height:220px; justify-content:flex-end;">
+        <span class="mono-label">Livestream</span>
+        <h3>Online</h3>
+        <p>Can't make it in person? Join our Sunday livestream, wherever you are.</p>
+      </div>
+      <a href="events.html" class="card tile-link" style="min-height:220px; justify-content:flex-end; text-decoration:none;">
+        <span class="mono-label">What's on</span>
+        <h3>Events</h3>
+        <p>See what's happening this month, from Youth Night to Community Service Day.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="abyss">
+    <div class="wrap two-col">
+      <div>
+        <h2 style="font-size:clamp(26px,3vw,34px);">Say hello</h2>
+        <p style="margin-top:14px; max-width:46ch;">
+          Questions about visiting, a Home Group near you, or anything else —
+          send us a message and someone from our team will get back to you.
+        </p>
+        <div style="margin-top:32px; display:flex; flex-direction:column; gap:16px; font-size:15px;">
+          <div>
+            <strong style="color:var(--color-cloud);">Address</strong><br>
+            <span>Lazimpat, Kathmandu, Nepal</span>
+          </div>
+          <div>
+            <strong style="color:var(--color-cloud);">Service times</strong><br>
+            <span>Sundays, 9:00 AM &amp; 11:00 AM</span>
+          </div>
+          <div>
+            <strong style="color:var(--color-cloud);">Email</strong><br>
+            <span>hello@newhope.org.np</span>
+          </div>
+        </div>
+      </div>
+
+      <form id="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your full name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="How can we help?"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send message<span class="arrow">→</span></button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="images/white.png" alt="New Hope Church Logo" class="mark" />
+          New Hope
+        </div>
+        <p>A community anchored in one unshakeable hope, gathering weekly in Kathmandu.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="connect.html">Groups</a></li>
+          <li><a href="testimonies.html">Testimonies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="connect.html#visit">Visit us</a></li>
+          <li><a href="connect.html#online">Watch online</a></li>
+          <li><a href="give.html">Give</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <ul>
+          <li>Sundays, 9:00 &amp; 11:00 AM</li>
+          <li>Lazimpat, Kathmandu, Nepal</li>
+          <li>hello@newhope.org.np</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 New Hope Church, Kathmandu.</span>
+      <span>Built with care for our community.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

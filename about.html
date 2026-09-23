@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="About Us — New Hope Church" data-np="हाम्रो बारेमा — New Hope Church">About Us — New Hope Church</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .about-layout{ display:grid; grid-template-columns: 1fr 220px; gap:64px; align-items:start; }
+  .side-nav{ position:sticky; top:110px; }
+  .side-nav ul{ list-style:none; margin:0; padding:0; border-left:1px solid var(--line); }
+  .side-nav a{
+    display:block; padding:10px 0 10px 18px; font-size:14px; font-weight:600;
+    color:var(--muted); border-left:2px solid transparent; margin-left:-1px;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .side-nav a.active, .side-nav a:hover{ color:var(--ink); border-color:var(--ink); }
+  .about-section{ padding:56px 0; border-top:1px solid var(--line); }
+  .about-section:first-of-type{ border-top:none; padding-top:0; }
+  @media (max-width: 900px){
+    .about-layout{ grid-template-columns: 1fr; }
+    .side-nav{ position:static; margin-bottom:8px; }
+    .side-nav ul{ display:flex; flex-wrap:wrap; border-left:none; border-bottom:1px solid var(--line); padding-bottom:12px; }
+    .side-nav a{ border-left:none; border-bottom:2px solid transparent; padding:6px 14px 6px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="index.html">
+      <img src="pictures/black-border.png" alt="New Hope Church Logo" class="mark" />
+      New Hope
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="connect.html" data-en="Connect" data-np="जोडिनुहोस्">Connect</a></li>
+      <li><a href="groups.html" data-en="Groups" data-np="समूहहरू">Groups</a></li>
+      <li><a href="events.html" data-en="Events" data-np="कार्यक्रमहरू">Events</a></li>
+      <li><a href="testimonies.html" data-en="Testimonies" data-np="गवाहीहरू">Testimonies</a></li>
+      <li><a href="about.html" class="active" data-en="About Us" data-np="हाम्रो बारेमा">About Us</a></li>
+      <li><a href="give.html" data-en="Give" data-np="दान गर्नुहोस्">Give</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-toggle" aria-label="नेपाली भाषामा हेर्नुहोस्">नेपाली</button>
+      <a class="btn btn-ghost" href="connect.html#visit-map" data-en="Find us" data-np="हामीलाई भेट्टाउनुहोस्">Find us</a>
+      <a class="btn btn-primary" href="connect.html" data-en="Contact Us" data-np="सम्पर्क गर्नुहोस्">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="tight">
+    <div class="wrap hero-in">
+      <h1 class="display" style="font-size:clamp(38px,6vw,64px); max-width:18ch;" data-en="Hope isn&#x27;t a feeling we chase. It&#x27;s a person we follow." data-np="आशा हामीले पछ्याउने भावना होइन। यो हामीले अनुसरण गर्ने व्यक्ति हो।">
+        Hope isn't a feeling we chase. It's a person we follow.
+      </h1>
+      <p style="max-width:60ch; font-size:18px; color:var(--muted); margin-top:20px;" data-en="A community of God-loving people, growing in Christ and living in one unshakeable hope that in Christ, every broken thing can be made new. Come as you are." data-np="हामी एउटै अटल आशामा जरा गाडिएको समुदाय हौं, जसले परमेश्वरको उपस्थिति अनुभव गर्दछ र दैनिक जीवनमा उहाँको शान्ति ल्याउन येशूसँग सहकार्य गर्दछ।">
+        A community of God-loving people, growing in Christ and living in one unshakeable hope that in Christ, every broken thing can be made new. Come as you are.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap about-layout">
+
+      <div>
+
+        <div id="who-we-are" class="about-section">
+          <h2 style="font-size:clamp(26px,3vw,34px);" data-en="Who we are" data-np="हामी को हौं">Who we are</h2>
+          <p style="margin-top:18px; font-size:17px; color:var(--muted); max-width:62ch;" data-en="A community of God-loving people, anchored in one unshakeable hope and gathered as one body in Christ. We’re a diverse congregation of families from across Nepal, coming together to worship, learn, and care for one another. We seek to live out God’s Great Commission, discover His calling for our lives, and serve others with radical servanthood." data-np="हाम्रा भेलाहरूको मुटुमा परमेश्वरको उपस्थितिको उत्कट खोजी छ — जहाँ हृदयहरू परिवर्तन हुन्छन्, अनुग्रह प्रकट हुन्छ, र विश्वासीहरू आफ्नो बोलावटमा अगाडि बढ्छन्। हामी लामो समयदेखिका बनेपाका परिवारहरू र सहरमा नयाँ आउनेहरूको मिश्रित मण्डली हौं, जो साप्ताहिक रूपमा आराधना गर्न, सिक्न, र एकअर्काको हेरचाह गर्न भेला हुन्छौं।">
+            A community of God-loving people, anchored in one unshakeable hope and gathered as one body in Christ. We’re a diverse congregation of families from across Nepal, coming together to worship, learn, and care for one another. We seek to live out God’s Great Commission, discover His calling for our lives, and serve others with radical servanthood.
+          </p>
+          <p style="font-size:17px; color:var(--muted); max-width:62ch;" data-en="Whether you grew up in church or you&#x27;re walking through the door for the first time, you&#x27;ll find people glad you came." data-np="तपाईं चर्चमा हुर्किनुभएको होस् वा पहिलो पटक ढोकाबाट भित्र पस्दै हुनुहुन्छ, तपाईंले आफू आउनुभएकोमा खुसी हुने मानिसहरू भेट्टाउनुहुनेछ।">
+            Whether you grew up in church or you're walking through the door for the
+            first time, you'll find people glad you came.
+          </p>
+        </div>
+
+        <div id="beliefs" class="about-section">
+          <h2 style="font-size:clamp(26px,3vw,34px);" data-en="Our beliefs" data-np="हाम्रा विश्वासहरू">Our beliefs</h2>
+          <p style="margin-top:18px; font-size:17px; color:var(--muted); max-width:62ch;" data-en="Faith shapes how we live. At New Hope, we are centered on Jesus, grounded in Scripture, and called to live with hope, purpose, and love." data-np="हाम्रा विश्वासहरू धर्मशास्त्रबाट लिइएका हुन् र यसले हामीले गर्ने हरेक कुरालाई आकार दिन्छ, शनिबारको आराधनादेखि हामीले आफ्ना छिमेकीहरूको हेरचाह गर्ने तरिकासम्म।">
+            Faith shapes how we live. At New Hope, we are centered on Jesus, grounded in Scripture, and called to live with hope, purpose, and love.
+          </p>
+          <div class="two-col" style="margin-top:28px; gap:28px;">
+            <div>
+              <h3 style="font-size:19px;" data-en="The good news" data-np="सुसमाचार">The good news</h3>
+              <p style="color:var(--muted); font-size:15px;" data-en="Jesus makes all things new. Jesus lived, died, and rose again so that we can know God, receive forgiveness, and find new life in Him. His grace is the hope we carry into every part of life." data-np="येशू ख्रीष्ट मर्नुभयो र फेरि जीवित हुनुभयो ताकि जो कोही पनि क्षमा पाउन र नयाँ बन्न सकोस्।">Jesus makes all things new. Jesus lived, died, and rose again so that we can know God, receive forgiveness, and find new life in Him. His grace is the hope we carry into every part of life.</p>
+            </div>
+            <div>
+              <h3 style="font-size:19px;" data-en="Scripture" data-np="धर्मशास्त्र">Scripture</h3>
+              <p style="color:var(--muted); font-size:15px;" data-en="God speaks, and we listen. The Bible is God’s Word and the foundation of our faith. It shapes how we know God, understand His story, make decisions, and live faithfully in the world." data-np="बाइबल परमेश्वरको हामीलाई भएको वचन हो — भरपर्दो, र हामी कसरी बाँच्छौं भन्नेको जग।">God speaks, and we listen. The Bible is God’s Word and the foundation of our faith. It shapes how we know God, understand His story, make decisions, and live faithfully in the world.</p>
+            </div>
+            <div>
+              <h3 style="font-size:19px;" data-en="Life Together" data-np="मण्डली">Life Together</h3>
+              <p style="color:var(--muted); font-size:15px;" data-en="Faith was never meant to be lived alone. We grow through genuine relationships, shared worship, honest conversations, and serving one another. At New Hope, we make room for people to belong, grow, and walk with Jesus together." data-np="येशूलाई पछ्याउने काम एक्लै गर्नको लागि होइन। हामी समुदायमा उत्तम रूपमा बढ्छौं।">Faith was never meant to be lived alone. We grow through genuine relationships, shared worship, honest conversations, and serving one another. At New Hope, we make room for people to belong, grow, and walk with Jesus together.</p>
+            </div>
+            <div>
+              <h3 style="font-size:19px;" data-en="Our Mission" data-np="मिसन">Our Mission</h3>
+              <p style="color:var(--muted); font-size:15px;" data-en="Love God. Love people. Bring hope. We believe the church is sent beyond its walls—to serve our neighbours, care for our community, share the good news of Jesus, and live out His love in everyday life." data-np="परमेश्वरले हामीलाई हाम्रो सहरलाई माया गर्न पठाउनुभएको छ — वचन, सेवा, र दैनिक विश्वस्ततामार्फत।">Love God. Love people. Bring hope. We believe the church is sent beyond its walls—to serve our neighbours, care for our community, share the good news of Jesus, and live out His love in everyday life.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="values" class="about-section">
+          <h2 style="font-size:clamp(26px,3vw,34px);" data-en="Our values" data-np="हाम्रा मूल्यमान्यताहरू">Our values</h2>
+          <p style="margin-top:18px; font-size:17px; color:var(--muted); max-width:62ch; margin-bottom:24px;" data-en="Three commitments shape how we worship, belong, and live as the people of New Hope." data-np="तीनवटा प्रतिबद्धताले चर्च परिवारको रूपमा हाम्रो सँगैको जीवनलाई डोर्‍याउँछन्।">
+            Three commitments shape how we worship, belong, and live as the people of New Hope.
+          </p>
+          <div class="card-grid" style="grid-template-columns:repeat(3,1fr);">
+            <div class="card">
+              <span class="tag" data-en="Presence" data-np="उपस्थिति">Worship</span>
+              <h3 data-en="Authentic worship" data-np="साँचो आराधना">Authentic worship</h3>
+              <p data-en="We make space to genuinely meet with God not to perform for one another, but to respond to Him with honest hearts." data-np="हामी एकअर्कालाई देखाउनका लागि होइन, साँच्चै परमेश्वरसँग भेट्न ठाउँ बनाउँछौं।">We make space to genuinely meet with God not to perform for one another, but to respond to Him with honest hearts.</p>
+            </div>
+            <div class="card">
+              <span class="tag" data-en="Community" data-np="आत्मीयता">Community</span>
+              <h3 data-en="Real community" data-np="साँचो समुदाय">Real community</h3>
+              <p data-en="We follow Jesus together, encouraging one another, carrying each others burdens, and growing in faith and love." data-np="समूहहरू र शनिबारको भेलाहरू तपाईंलाई चिन्न र चिनिन मद्दत गर्न अस्तित्वमा छन्।">We follow Jesus together, encouraging one another, carrying each others burdens, and growing in faith and love.</p>
+            </div>
+            <div class="card">
+              <span class="tag" data-en="Service" data-np="उदारता">Service</span>
+              <h3 data-en="Faith in action" data-np="खुला हातहरू">Faith in action</h3>
+              <p data-en="We put our faith into practice by serving others, caring for our community, and using what we've been given to make a difference." data-np="हामीले पाएको तरिकाले नै, हामी आफ्नो समय, स्रोतसाधन, र घरहरू स्वतन्त्र रूपमा दिन्छौं।">We put our faith into practice by serving others, caring for our community, and using what we've been given to make a difference.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="leadership" class="about-section">
+          <h2 style="font-size:clamp(26px,3vw,34px);" data-en="Leadership" data-np="नेतृत्व">Leadership</h2>
+          <div class="two-col" style="margin-top:28px; align-items:center;">
+            <div class="art-block" style="aspect-ratio:4/5; background:linear-gradient(160deg,#3a3a3a,#050505);"></div>
+            <div>
+              <h3 style="font-family:'Fraunces',serif; font-size:28px; font-weight:500;" data-en="Rev. Ruben Rana Magar" data-np="पास्टर रुबेन राणा मगर">Rev. Ruben Rana Magar</h3>
+              <p style="color:var(--muted); margin-top:14px;" data-en="Ruben has led New Hope Church for over a decade, alongside his wife and a team of local elders. His preaching centres on the hope found in Christ, and his door is open to anyone in the congregation who wants to talk, pray, or simply be heard." data-np="रुबेनले आफ्नी श्रीमती र स्थानीय एल्डरहरूको टोलीसँगै New Hope Church लाई एक दशकभन्दा बढी समयदेखि नेतृत्व गर्दै आउनुभएको छ। उहाँको प्रवचन ख्रीष्टमा पाइने आशामा केन्द्रित हुन्छ, र कुरा गर्न, प्रार्थना गर्न, वा सुनिन चाहने मण्डलीका जो कोहीका लागि पनि उहाँको ढोका खुला छ।">
+                Ruben has led New Hope Church for over a decade, alongside his wife
+                and a team of local elders. His preaching centres on the hope found
+                in Christ, and his door is open to anyone in the congregation who
+                wants to talk, pray, or simply be heard.
+              </p>
+              <a class="btn btn-ghost" href="connect.html" style="margin-top:8px;" data-en="Get in touch" data-np="सम्पर्कमा रहनुहोस्">Get in touch</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <nav class="side-nav" aria-label="On this page">
+        <ul>
+          <li><a href="#who-we-are" data-en="Who we are" data-np="हामी को हौं">Who we are</a></li>
+          <li><a href="#beliefs" data-en="Our beliefs" data-np="हाम्रा विश्वासहरू">Our beliefs</a></li>
+          <li><a href="#values" data-en="Our values" data-np="हाम्रा मूल्यमान्यताहरू">Our values</a></li>
+          <li><a href="#leadership" data-en="Leadership" data-np="नेतृत्व">Leadership</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </section>
+
+  <section style="background:var(--ink); color:var(--paper);">
+    <div class="wrap">
+      <h2 style="font-size:clamp(28px,3.6vw,40px); max-width:20ch; color:var(--paper);" data-en="We warmly welcome you to worship, grow, and walk with us." data-np="हामी तपाईंलाई यो नयाँ आशामा हामीसँगै पाइला चाल्न न्यानो स्वागत गर्दछौं।">
+        We warmly welcome you to worship, grow, and walk with us.
+      </h2>
+      <div style="margin-top:28px;">
+        <a class="btn" style="background:var(--paper); color:var(--ink);" href="connect.html#visit-map" data-en="Plan your visit" data-np="आफ्नो भ्रमणको योजना बनाउनुहोस्">Plan your visit</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:var(--paper); margin-bottom:14px;">
+          <img src="pictures/black-border.png" alt="New Hope Church Logo" class="mark" />
+          New Hope
+        </div>
+        <p data-en="A community anchored in one unshakeable hope, gathering weekly in Nepal." data-np="एउटै अटल आशामा जरा गाडेको समुदाय, नेपालमा साप्ताहिक रूपमा भेला हुने।">A community anchored in one unshakeable hope, gathering weekly in Nepal.</p>
+      </div>
+      <div>
+        <h4 data-en="Explore" data-np="अन्वेषण">Explore</h4>
+        <ul>
+          <li><a href="about.html" data-en="About Us" data-np="हाम्रो बारेमा">About Us</a></li>
+          <li><a href="events.html" data-en="Events" data-np="कार्यक्रमहरू">Events</a></li>
+          <li><a href="connect.html" data-en="Connect" data-np="जोडिनुहोस्">Connect</a></li>
+          <li><a href="testimonies.html" data-en="Testimonies" data-np="गवाहीहरू">Testimonies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Connect" data-np="जोडिनुहोस्">Connect</h4>
+        <ul>
+          <li><a href="connect.html#visit-map" data-en="Visit us" data-np="हामीलाई भ्रमण गर्नुहोस्">Visit us</a></li>
+          <li><a href="connect.html#online" data-en="Watch online" data-np="अनलाइन हेर्नुहोस्">Watch online</a></li>
+          <li><a href="give.html" data-en="Give" data-np="दान गर्नुहोस्">Give</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Find us" data-np="हामीलाई भेट्टाउनुहोस्">Find us</h4>
+        <ul>
+          <li data-en="Saturday, 10:30 AM &amp; 12:30 PM" data-np="शनिबार, बिहान १०:३० र मध्यान्ह १२:३०">Saturday, 10:30 AM & 12:30 PM</li>
+          <li data-en="New Hope Church, Nepal" data-np="New Hope Church, नेपाल">New Hope Church, Nepal</li>
+          <li>hello@newhope.org.np</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-en="© 2026 New Hope Church, Nepal." data-np="© २०२६ New Hope Church, नेपाल।">© 2026 New Hope Church, Nepal.</span>
+      <span data-en="Built with care for our community." data-np="हाम्रो समुदायको लागि मायाका साथ निर्माण गरिएको।">Built with care for our community.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // highlight side-nav link matching scroll position
+  const sections = document.querySelectorAll('.about-section[id]');
+  const links = document.querySelectorAll('.side-nav a');
+  const onScroll = () => {
+    let current = sections[0]?.id;
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 160) current = s.id; });
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  };
+  document.addEventListener('scroll', onScroll);
+  onScroll();
+</script>
+</body>
+</html>
