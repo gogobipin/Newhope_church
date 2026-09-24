@@ -36,4 +36,4 @@ youth-camp-register.
 html
 css/style.css
 js/script.js
-images/
+pictures/
